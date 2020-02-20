@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+form{
+    width: 450px;
+}
+label{
+    display: block;
+    margin: 10px;
+}
+.quantity{
+    display: inline-block;
+}
+[type="number"]{
+    width: 50px;
+}
+[name="books"]{
+    width: 180px;
+}

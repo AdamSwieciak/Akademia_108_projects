@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form
+        action="https://formspree.io/adam_10@vp.pl"
+        method="POST"
+        >
+        <input type="text" name="name" id="name" placeholder="name">
+        <input type="text" name="secoundname" id="secname" placeholder="secound name">
+        <input type="email" name="mailo" id="mailo" placeholder="email">
+        <input type="tel" name="phone" id="phone" placeholder="phone">
+        <select name="town" id="town">
+            <option value="Krakow">Krakow</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdansk">Gdańsk</option>
+        </select>
+        <label><input type="radio" name="gender" value="men">Mężczyzna</label>
+        <label><input type="radio" name="gender" value="woman">Kobieta</label>
+        <label><input type="checkbox" name="agreement" id="agreement">Zgoda na dane osobowe</label>
+        <textarea name="pool" id="pools" cols="30" rows="10"></textarea>
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+</html>

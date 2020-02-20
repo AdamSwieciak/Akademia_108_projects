@@ -1,0 +1,91 @@
+body {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.imga {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../9-jezioro.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 5px white solid;
+}
+.imga::after,
+.imga::before {
+  position: absolute;
+  content: "";
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-bottom: 140px white solid;
+  width: 18px;
+  visibility: visible;
+}
+.imga::before {
+  left: 100%;
+}
+.title {
+  position: absolute;
+  text-transform: uppercase;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.726);
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  visibility: hidden;
+}
+.imga:hover {
+  box-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 1);
+}
+
+.imga:hover .title {
+  animation: boxanim 1s forwards;
+}
+
+.imga:hover::after,
+.imga:hover::before {
+  animation: boxanim2 1s steps(1) forwards;
+}
+
+@keyframes boxanim {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+    font-size: 3em;
+    line-height: 80px;
+    height: 80px;
+  }
+  100% {
+    visibility: visible;
+    font-size: 3em;
+    line-height: 80px;
+    height: 80px;
+  }
+}
+
+@keyframes boxanim2 {
+  0% {
+    visibility: visible;
+  }
+  49% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
