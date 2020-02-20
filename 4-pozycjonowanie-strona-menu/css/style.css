@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    background-color: #c9c9c9;
+    text-align: center;
+    height: 350px;
+    border-left: 0px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #F34A53;
+}
+h1{
+    color: #2a6fc2;
+    font-size: 70px;
+    line-height: 350px;
+}
