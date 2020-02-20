@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  </head>
+  <body>
+    <header>
+      <h1>FRONT END DEVELOPER</h1>
+      <h2>HTML<span>&#183</span>CSS<span>&#183</span>JavaScript</h2>
+      <a href="">dowiedz się więcej</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#first">O Mnie</a></li>
+            <li><a href="#secound">Portfolio</a></li>
+            <li><a href="#third">Kontakt</a></li>
+        </ul>
+         <ul class="open">
+                <li><a href="#first">O Mnie</a></li>
+                <li><a href="#secound">Portfolio</a></li>
+                <li><a href="#third">Kontakt</a></li>
+            </ul>
+            <i class="fas fa-bars"></i>
+    </nav>      
+    
+    <section class="aboutme" id="first">
+        <h2>O mnie</h2>
+        <img src="img/about.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem beatae doloremque laboriosam aut accusantium. Dolore nam officiis, distinctio voluptatem labore eligendi sapiente dolorem earum consequuntur eum, pariatur magnam! Ipsam, nulla?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem beatae doloremque laboriosam aut accusantium. Dolore nam officiis, distinctio voluptatem labore eligendi sapiente dolorem earum consequuntur eum, pariatur magnam! Ipsam, nulla?</p>
+        <a href="">moje portfolio</a>
+    </section>
+    <section class="portfolio" id="secound">
+        <h2>Portfolio</h2>
+        <div class="imgblock">
+            <img src="img/portfolio/photo-1.jpg" alt="">
+            <img src="img/portfolio/photo-2.jpg" alt="">
+            <img src="img/portfolio/photo-3.jpg" alt="">
+            <img src="img/portfolio/photo-4.jpg" alt="">
+            <img src="img/portfolio/photo-5.jpg" alt="">
+            <img src="img/portfolio/photo-6.jpg" alt="">
+            <img src="img/portfolio/photo-7.jpg" alt="">
+            <img src="img/portfolio/photo-8.jpg" alt="">
+            <img src="img/portfolio/photo-9.jpg" alt="">
+            <img src="img/portfolio/photo-10.jpg" alt="">
+            <img src="img/portfolio/photo-11.jpg" alt="">
+            <img src="img/portfolio/photo-12.jpg" alt=""> 
+        </div>
+    </section>
+    <section class="contact" id="third">
+
+        <h2 >Kontakt</h2>
+
+        <form action="">
+            <label for="">
+                <input type="text" placeholder="imię">
+                <input type="email" name="mailo" id="mailo" placeholder="Email">
+            </label>
+            <textarea name="text" id="" cols="30" rows="10" placeholder="Wiadomość"></textarea>
+            <input type="submit" value="WYŚLIJ WIADOMOŚĆ">
+        </form>
+        <div class="awesome">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy Adam Święciak 2020</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

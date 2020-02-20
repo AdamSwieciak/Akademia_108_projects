@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+header > a {
+  margin-top: 80px;
+}
+header > h1 {
+  position: relative;
+  color: #007bff;
+  font-size: 90px;
+  margin: 50px;
+}
+header > h1:after,
+.aboutme > h2:after,
+.portfolio > h2:after,
+.contact > h2:after {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 90px;
+  border-bottom: #007bff 2px solid;
+}
+h2 {
+  position: relative;
+  color: #777;
+  font-size: 40px;
+  font-weight: 100;
+}
+span {
+  color: #007bff;
+  margin: 5px;
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  border: 2px solid #007bff;
+  width: 30%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px;
+  color: #777;
+  text-transform: uppercase;
+  list-style: none;
+}
+li > a {
+  color: white;
+}
+
+nav {
+  height: 10vh;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav > ul > li {
+  display: inline;
+  font-size: 30px;
+  margin: 50px;
+  cursor: pointer;
+}
+
+section {
+  padding: 50px;
+}
+.aboutme {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutme > img {
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+.aboutme > img:hover {
+  transform: scale(1.1);
+}
+.aboutme > p {
+  color: #777;
+  font-size: 20px;
+  width: 90%;
+  text-align: center;
+}
+
+.portfolio {
+  background-color: rgb(238, 225, 225);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.imgblock {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+img {
+  width: 30%;
+  height: auto;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+form {
+  margin-top: 40px;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+input,
+textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+[type="submit"] {
+  border: 1px solid #007bff;
+  font-size: 25px;
+  padding: 15px;
+  cursor: pointer;
+}
+label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+[type="text"],
+[type="email"],
+textarea {
+  padding: 15px;
+  font-size: 20px;
+  width: 45%;
+}
+textarea {
+  width: 100%;
+}
+
+footer {
+  background-color: rgb(238, 225, 225);
+  text-align: center;
+  height: 10vh;
+}
+footer > p {
+  font-size: 30px;
+  line-height: 10vh;
+}
+
+.awesome {
+  font-size: 50px;
+  color: #007bff;
+  word-spacing: 50px;
+  cursor: pointer;
+  margin: 30px;
+}
+nav > .fa-bars {
+  display: none;
+}
+ul:nth-of-type(2) {
+  display: none;
+}
+
+@media (max-width: 1048px) {
+  header > h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  a {
+    font-size: 15px;
+  }
+  ul:nth-of-type(1) {
+    display: none;
+  }
+
+  ul:nth-of-type(2) {
+    position: absolute;
+    top: -20vh;
+    right: 0;
+    width: 120px;
+    height: 150px;
+    background-color: #007bff;
+  }
+  ul:nth-of-type(2) > li > a {
+    color: white;
+    border: none;
+  }
+  ul:nth-of-type(2) > li {
+    margin: 10px;
+  }
+  nav {
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav > .fa-bars {
+    display: block;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  section {
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .aboutme > p {
+    font-size: 13px;
+    width: 90%;
+  }
+  .imgblock > img {
+    width: 100%;
+    height: auto;
+  }
+  label {
+    flex-wrap: wrap;
+  }
+  [type="text"],
+  [type="email"],
+  textarea {
+    font-size: 15px;
+    width: 100%;
+  }
+  [type="submit"] {
+    font-size: 15px;
+  }
+  .awesome {
+    font-size: 30px;
+    word-spacing: 50px;
+    margin: 30px;
+  }
+  footer > p {
+    font-size: 15px;
+  }
+}

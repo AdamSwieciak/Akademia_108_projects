@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+li,
+h1,
+p,
+h2 {
+  text-transform: uppercase;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin: 1em;
+}
+section h2 {
+  font-size: 6em;
+}
+section h3 {
+  font-size: 2em;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+nav > ul > li {
+  display: inline;
+  margin: 20px;
+  font-size: 2em;
+}
+nav {
+  margin-right: 20%;
+  padding: 3.5em;
+  align-self: flex-end;
+}
+.headermain {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.butt {
+  background-color: rgb(253, 229, 13);
+  border-radius: 5px;
+  padding: 10px;
+}
+h2 {
+  font-size: 4em;
+}
+h1 {
+  font-size: 8em;
+  margin: 0.5em;
+}
+.butt p {
+  font-size: 2em;
+  margin: 1em;
+}
+.butt {
+  margin: 4em;
+}
+
+/* start new section */
+
+.elements {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin: 10em 0;
+  width: 100%;
+}
+.elements p {
+  font-size: 2em;
+}
+.elements h3 {
+  font-size: 4em;
+  margin: 0.8em 0;
+}
+.yello {
+  text-align: center;
+  width: 20%;
+}
+.circle {
+  position: relative;
+  width: 15vh;
+  height: 15vh;
+  background-color: rgb(214, 214, 11);
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.fas {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+}
+.imgbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+.photo {
+  margin: 2em;
+  text-align: center;
+}
+.photo h4 {
+  font-size: 3em;
+}
+.photo h4 {
+  font-size: 3em;
+  margin: 0.2em 0;
+}
+.photo h5 {
+  font-size: 2em;
+  color: grey;
+  font-weight: 100;
+}
