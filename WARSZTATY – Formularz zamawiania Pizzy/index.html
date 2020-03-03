@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form action="">
+      <input type="text" name="name" id="name" placeholder="Imie" />
+      <input type="text" name="surname" id="surname" placeholder="Nazwisko" />
+      <input type="text" name="street" id="street" placeholder="Ulica" />
+      <input
+        type="text"
+        name="nrhouse"
+        id="nrhouse"
+        placeholder="Nr domu/mieszkania"
+      />
+      <input
+        type="text"
+        name="postcode"
+        id="postcode"
+        placeholder="Kod Pocztowy"
+      />
+      <input type="text" name="city" id="city" placeholder="Miasto" />
+      <select name="pizza" id="pizza">
+        <option value="">-- Wybierz Pizzę --</option>
+        <option value="1" name="Margerita">Margerita</option>
+        <option value="2" name="Ananas">Ananas</option>
+        <option value="3" name="peperoni">peperoni</option>
+        <option value="4" name="italiana">italiana</option>
+        <option value="5" name="barbrc">barbrc</option>
+      </select>
+      <p id="price"></p>
+      <label for="">
+        Wybierz sosy: Pomidorowy:<input
+          type="checkbox"
+          name="tomato"
+          id="tomato"
+        />
+        Czosnkowy:<input type="checkbox" name="garlix" id="garlix" />
+      </label>
+      <label for=""
+        >Zgoda na relizacje zamówienia
+        <input type="checkbox" name="agreement" id="agreement"
+      /></label>
+      <input type="button" value="Wyślij" id="button" />
+    </form>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

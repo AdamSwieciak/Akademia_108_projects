@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.block {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.one_post {
+  width: 70%;
+  height: 20vh;
+  background-color: rgb(116, 70, 70);
+}
